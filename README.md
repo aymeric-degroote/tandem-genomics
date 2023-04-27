@@ -38,6 +38,13 @@ Expected folder hierarchy:
     `-- filtered_cells.txt
 ```
 
+
+Notebooks should be executed in the following order:  
+1. `notebook-preprocess.ipynb`  
+2. `notebook-multivelo.ipynb`  
+3. `notebook-tandem.ipynb`  
+4. `notebook-pathways.ipynb`  
+
 By Aymeric Degroote (@aymeric-degroote) & Matthieu Dagommer (@MatDagommer)
 
 
