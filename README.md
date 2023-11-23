@@ -1,4 +1,15 @@
-# tandem-genomics
+# Welcome to tandem-genomics!
+
+This project was conducted by Aymeric Degroote (@aymeric-degroote) & Matthieu Dagommer (@MatDagommer) as part of Statistical Machine Learning for Genomics (BMENE4480), supervised by Prof. Elham Azizi, Dpt. of Biomedical Engineering, Columbia University.
+
+In this project, we combine two libraries, [MultiVelo](https://github.com/welch-lab/MultiVelo) and [CellRank](https://github.com/theislab/cellrank), to simultaneously use RNA-seq and ATAC-seq data for cell trajectory inference. We do this by enriching the way velocity maps, a core component of cell trajectory inference, are computed. Velocity maps indicate the direction in which a cell's transcriptomics is evolving in gene expression space. [velocyto](https://github.com/velocyto-team/velocyto.R), the original velocity map framework used in **CellRank**, computes these maps based on gene expression (RNA-seq) and spliced/unspliced RNA ratios only, while **MultiVelo** adds chromatin accessibility (ATAC-seq) to the mix. By replacing velocyto with **MultiVelo** in the **CellRank** inference framework, we enrich the inference with chromatin accessibility when this data is available.
+
+Why tandem? Because **CellRank** and **MultiVelo** work as a tandem!
+Also, "Velo" means "bicycle" in French so "MultiVelo" naturally designates a tandem...
+
+### Proposed pipeline:
+
+![alt text](TandemGenomics.png)
 
 
 Expected folder hierarchy:
@@ -45,10 +56,4 @@ Notebooks should be executed in the following order:
 3. `notebook-tandem.ipynb`  
 4. `notebook-pathways.ipynb`  
 
-By Aymeric Degroote (@aymeric-degroote) & Matthieu Dagommer (@MatDagommer)
 
-
-Code for a project for the course 'BMEN 4480 Statistical Machine Learning for Genomics' hold by Elham Azizi, Department of Biomedical Engineering, Columbia University.
-
-Why tandem? Because CellRank and MultiVelo work as a tandem!  
-Also, "Velo" means "bicycle" in French so "MultiVelo" naturally designates a tandem...
